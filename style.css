@@ -1,0 +1,312 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+#s22{
+    color: black;
+    opacity: 80%;
+   
+}
+/*menu*/
+.menu{
+    font-size: 13.5px;
+    padding-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+li:hover{
+    background-color: lightgrey;
+}
+.m1,.m2,.m3,.m4{
+    float: right; 
+    width: 8%;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+/*reaserch*/
+#s1{
+    position: relative;
+    background: url(257-5000x3333.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 600px;
+    color: white;
+    padding: 10px;
+    
+}
+form{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+    
+}
+form input[type="text"]{
+font-size: 14px;
+font-weight: 500;
+height: 70px;
+width: 78%;
+padding:0 110px;
+
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(108, 108, 207);
+    height: 70px;
+    color: aliceblue;
+}
+.search:hover{
+    background-color: gray;
+}
+.w{
+    clear: both;
+    background-color: white;
+    padding: 0cm;
+    position: absolute;
+    text-align: center;
+    left: 100px;
+    color: black;
+    
+}
+
+/*products*/
+#s2{
+    position: relative;
+    
+    flex-direction: row;
+    top: -100px;
+    
+  
+}
+#s2 ul {
+    display:flex ;
+    justify-content: space-around;
+
+}
+#s2 li{
+    display: inline-block;
+    width:200px;
+    height: 150px;
+    box-shadow: 0 0px 10px black;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+#s2 li:hover{
+    background-color: lightgrey;
+}
+.gold{
+    background: url(gold\ 2.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.g {
+    height: 30%;
+    width: 100%;
+    padding-bottom: 6px;
+    background-color:rgb(255, 248, 248,0.6);
+    }
+.silver{
+    background: url(silver.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.vintage{
+    background: url(vintage\ jewelry.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+.other{
+    background: url(other.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+/*main product part*/
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1fr 1fr;
+    grid-template-areas:
+    "title title title"
+    "subtitle subtitle subtitle"
+   "goldPart goldPart2 silverPart"
+   "silverPart2 vintagePart vintagePart2";
+   
+   background-color: rgb(216, 216, 240,0.3);
+}
+.products{
+    grid-area: title;  
+    text-align: center;
+    bottom: -100px;
+    
+}
+.product{
+    grid-area: subtitle;  
+    text-align: center;
+    bottom: -100px;
+    color: gray;
+}
+.goldPart{
+    grid-area: goldPart;
+    
+}
+.goldPart2{
+    grid-area: goldPart2; 
+    
+}
+.silverPart{
+    grid-area: silverPart;
+    
+}
+.silverPart2{
+    grid-area: silverPart2;
+      
+}
+.vintagePart{
+    grid-area: vintagePart;
+    
+}
+.vintagePart2{
+    grid-area:vintagePart2; 
+     
+}
+.goldPart,.goldPart2,.silverPart,.silverPart2,.vintagePart,.vintagePart2{
+    width:80%;
+    height: 300px;
+    text-align: center; 
+    border-radius: 10px;
+    border: 2px rgb(209, 204, 204) solid;
+    margin-bottom: 20px;
+    background-color: white;
+    margin-left: 10%;
+   
+}
+.goldImg,.goldImg2,.silverImg,.silverImg2,.vintageImg,.vintageImg2{
+    width: 70%;
+    height: 60%;
+    position: relative;
+    padding: 10px auto 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    margin:10px 20px 10px ;
+}
+/*side part*/
+aside{
+display: flex;
+justify-content: space-around;
+}
+.p1{
+font-size: 25px;
+text-align: center;
+}
+.p2{
+    font-size: 15px;
+    text-align: center;
+}
+/* questionnaire */
+
+.form1{
+    width: 80%;
+    height:500px;
+    box-shadow: 0 0px 10px lightgray;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    background: url(formback2.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #eef2f6;
+    
+}
+.formTitle{
+    text-align: center;
+}
+/*game*/
+#game{
+    width: 40%;
+    height:510px;
+    box-shadow: 0 0px 10px lightgray;
+    display: inline-block;
+    background: url(gameback.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+img{
+    height: 50%;
+    width: 50%;
+    margin-top: 0%;
+    
+}
+
+
+#ti{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 25px;
+    color: black;
+    width: 80%;
+    margin-bottom: auto;
+    text-align: center;
+    height: 30px;
+    background-color: white;
+    border: 2px gray solid;
+}
+#timer{
+    padding: 5px;
+    color: crimson;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    height: 20px;
+    width: 50%;
+    margin: 0px auto 10px;
+    text-align: center;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
+#t{
+    position: relative;
+    width: 50%;
+    height: 20px;
+    text-align: center;
+    background-color: red;
+    margin: 10px auto 0px;
+    padding: 5px;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+}
+footer{
+    font-size: smaller;
+    color: gray;
+    background-color: #eef2f6;
+    text-align: center;
+}
+    

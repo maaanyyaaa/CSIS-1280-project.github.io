@@ -1,0 +1,37 @@
+@media(min-width:1024px) {
+
+    
+}
+@media(max-width:1023px){
+    #questionnaire{display: none;}
+    .p1,.p2{display: none;}
+    .menu li{padding-left: 60px;} 
+    .m2{display: none;} 
+    #s2 li{width: 20%;margin-right: 20px;} 
+    #game{display: none;}
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "title title"
+        "subtitle subtitle"
+       "goldPart goldPart2"
+       "silverPart silverPart2 "
+       "vintagePart vintagePart2";}
+       .goldPart,.goldPart2,.silverPart,.silverPart2,.vintagePart,.vintagePart2{
+        width:100%;
+        height: 300px;
+        margin: 0;}
+    
+}
+@media(max-width:767px){
+.kinds{flex-direction: column;align-items: center;margin-top: 120px}
+#s1{height: 250px;}
+#s2 li{width: 100%;margin-right: 20px;}
+aside{display: none;}
+.p1,.p2{display: none;}
+.menu li{padding-left: 60px;}
+.m1,.m2{display: none;}
+main{display: none;}
+}
